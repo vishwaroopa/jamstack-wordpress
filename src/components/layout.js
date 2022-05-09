@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           title
           url
         }
-        menu(id: "TWVudToy") {
+        menu(id: "dGVybToy") {
           menuItems {
             nodes {
               id

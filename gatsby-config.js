@@ -11,7 +11,7 @@ module.exports = {
       options: {
         typeName: "WPGraphQL",
         fieldName: "wpgraphql",
-        url: "https://wordpressjamstack.lwj.dev/graphql",
+        url: "https://www.suryacemhyd.com/blog/graphql",
       },
     },
   ],
