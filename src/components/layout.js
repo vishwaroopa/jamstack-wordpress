@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import "@wordpress/block-library/build-style/style.css"
-//import "../styles/layout.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,13 +32,8 @@ const Layout = ({ children }) => {
   }))
 
   return (
-      <>
-          <link rel="stylesheet" href="https://www.suryacemhyd.com/blog/wp-content/themes/hello-elementor/theme.min.css" />
-          <link rel="stylesheet" href="https://www.suryacemhyd.com/blog/wp-content/uploads/elementor/css/post-7.css" />
-          <link rel="stylesheet" href="https://www.suryacemhyd.com/blog/wp-content/uploads/elementor/css/post-46.css" />
-          <link rel="stylesheet" href="https://www.suryacemhyd.com/blog/wp-content/themes/hello-elementor/style.min.css" />
-          <link rel="stylesheet" href="https://www.suryacemhyd.com/blog/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js" />
-          <header>
+    <>
+      <header>
         <Link to="/" className="home">
           {title}
         </Link>
