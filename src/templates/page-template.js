@@ -8,12 +8,23 @@ export const query = graphql`
       page(id: $id) {
         title
         content
+enqueuedStylesheets {
+              nodes {
+                src
+              }
+            }
+            enqueuedScripts {
+              nodes {
+                src
+                id
+              }
+            }
       }
     }
   }
 `
 
-const PageTemplate = ({ data }) => {
+const PageTemplate = ({ data, styles }) => {
   const page = data.wpgraphql.page
   return (
     <Layout>

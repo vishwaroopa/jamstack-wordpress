@@ -4,7 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import "@wordpress/block-library/build-style/style.css"
 import "../styles/layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, styles, scripts }) => {
   const data = useStaticQuery(graphql`
     query {
       wpgraphql {
@@ -32,8 +32,12 @@ const Layout = ({ children }) => {
   }))
 
   return (
-    <>
-      <header>
+      <>
+          <link rel="jjj" src="https://www.suryacemhyd.com/blog/wp-content/themes/hello-elementor/theme.min.css" />
+          {styles.map((node, id) => (
+              <link key={`style-${id}`} href={node.src} rel="stylesheet" />
+          ))}
+          <header>
         <Link to="/" className="home">
           {title}
         </Link>

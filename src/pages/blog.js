@@ -11,6 +11,17 @@ export const query = graphql`
           title
           uri
           excerpt
+enqueuedStylesheets {
+              nodes {
+                src
+              }
+            }
+            enqueuedScripts {
+              nodes {
+                src
+                id
+              }
+            }
         }
       }
     }
