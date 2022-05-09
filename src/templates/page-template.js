@@ -24,7 +24,7 @@ enqueuedStylesheets {
   }
 `
 
-const PageTemplate = ({ data, styles }) => {
+const PageTemplate = ({ data }) => {
   const page = data.wpgraphql.page
   return (
     <Layout>
