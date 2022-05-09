@@ -26,8 +26,10 @@ enqueuedStylesheets {
 
 const PageTemplate = ({ data }) => {
   const page = data.wpgraphql.page
-  return (
-    <Layout>
+    return (
+
+        <Layout>
+<link rel="stylesheet" href="https://www.suryacemhyd.com/blog/wp-content/themes/hello-elementor/theme.min.css" />
       <h1 dangerouslySetInnerHTML={{ __html: page.title }} />
       <div dangerouslySetInnerHTML={{ __html: page.content }} />
     </Layout>
